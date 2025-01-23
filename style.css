@@ -1,0 +1,13 @@
+#n{
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    margin: 0;
+}
+.container{
+    margin: 0;
+   
+}
+#rech{
+    margin-top: 20px;
+}
