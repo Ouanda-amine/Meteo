@@ -8,32 +8,68 @@
     <title>GreenTech Innovators</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="bd">
     <nav id="n">
-        <h1>Wearth</h1>
+        <h1 style="color: azure; margin-left: 60px;" >WeatherConnect</h1>
         <div id="rech">
-            <input type="tex "  id="rechville" placeholder="entrez une ville">
-            <button onclick="fetchdata()">rechercher</button>
+            <div id="re">
+                <input type="text" id="rechville" placeholder="entrez une ville" class="form-control" value="benimallal">
+            <button class="btn btn-primary" onclick="fetchdata()">rechercher</button>
+            </div>
+            <div class="dropdown">
+                <ul id="filterList" class="dropdown-menu show" aria-labelledby="dropdownMenuButton">
+                    <li class="dropdown-item">casablanca</li>
+                    <li class="dropdown-item">rabat</li>
+                    <li class="dropdown-item">paris</li>
+                    <li class="dropdown-item">benimallal</li>
+                    <li class="dropdown-item">newyork</li>
+                    <li class="dropdown-item">london</li>
+                    <li class="dropdown-item">madrid</li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="row">
-            <h1 class="col" id="nomville"></h1>
-            <h2 id="hh" class="col"></h1>
-        </div>
-        
-       
-    </section>
-
-    <section class="services">
-        
-        <div class="icon">
-            
+    <section class="container">
+        <h1 id="datetime" style="text-align: start; color: rgb(6, 7, 7); font-size: 20px;"></h1>
+        <div class="row" id="bigrow">
+            <div class="col-md-3">
+                <img src="" alt="" id="icon" style="justify-content: center;">
+            </div>
+            <div class="col-md-9" id="div">
+                <h1 id="nomville" style="padding: 0; text-align: center;"></h1>
+                <h2 id="hh" style="text-align: center;"></h2>
+            </div>
         </div>
     </section>
+    
+    <div class="row" id="pr">
+        <div class="col" id="d">
+            <div class="row">
+                <h3 id="day1" class="col"></h3>
+                <img src="" alt="" id="img1" class="col">
+            </div>
+        </div>
+        <div class="col" id="d">
+            <div class="row">
+                <h3 id="day2" class="col"></h3>
+                <img src="" alt="" id="img2" class="col">
+            </div>
+        </div>
+        <div class="col" id="d">
+            <div class="row">
+                <h3 id="day3" class="col"></h3>
+                <img src="" alt="" id="img3" class="col">
+            </div>
+        </div>
+        <div class="col" id="d">
+            <div class="row">
+                <h3 id="day4" class="col"></h3>
+                <img src="" alt="" id="img4" class="col">
+            </div>
+        </div>
+    </div>
 
-   
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
